@@ -14,6 +14,7 @@ return {
         html = {
           filetypes = { "html", "templ", "htmldjango" },
         },
+        gitlab_ci_ls = {},
       },
     },
   },
