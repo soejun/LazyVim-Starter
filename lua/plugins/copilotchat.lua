@@ -10,6 +10,17 @@ return {
       window = {
         width = 0.3,
       },
+      history_path = vim.fn.stdpath("data") .. "/copilotchat_history", -- Default path to stored history
+      mappings = {
+        close = {
+          normal = "q",
+          insert = "",
+        },
+        reset = {
+          normal = "",
+          insert = "",
+        },
+      },
     }
   end,
 }
