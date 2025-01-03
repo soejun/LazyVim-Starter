@@ -39,3 +39,9 @@ autocmd("BufWinEnter", {
     end
   end,
 })
+
+-- Markdown
+-- TODO: Disable diagnostics and spellcheck for markdown by default
+--       - Need to create cases for this, might be too complex a global config file is better.
+-- TODO: Large code snippets in markdown files should be folded by default
+-- TODO: Global configuration file for markdown-lint (this isn't pert inent to autocmd's)
