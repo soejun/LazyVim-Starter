@@ -4,3 +4,4 @@
 
 vim.g.autoformat = false
 vim.g.snacks_animate = true
+vim.g.lazyvim_python_lsp = "jedi_language_server"
