@@ -35,3 +35,7 @@ that can make changes to the default values, or return new values to be used ins
 
 - Yanking an entire file: `:%y+`
   - `+` is a register that is tied to the system clipboard.
+
+## Python
+
+[PyLsp LazyVim Configuration](https://www.reddit.com/r/neovim/comments/14316t9/help_me_to_get_the_best_python_neovim_environment/)
