@@ -1,6 +1,8 @@
 return {
   "folke/snacks.nvim",
   opts = {
+    explorer = {
+    },
     terminal = {
       win = {
         height = 0.25,
