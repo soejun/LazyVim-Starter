@@ -15,6 +15,7 @@ return {
         },
         jedi_language_server = {},
         gitlab_ci_ls = {},
+        nginx_language_server = {},
       },
     },
   },
