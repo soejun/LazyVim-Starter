@@ -40,8 +40,13 @@ autocmd("BufWinEnter", {
   end,
 })
 
--- Markdown
--- TODO: Disable diagnostics and spellcheck for markdown by default
+-- wrap and check for spell in text filetypes
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = { "text", "plaintex", "typst", "gitcommit", "markdown" },
+  callback = function()
+    vim.opt_local.wrap = false
+    vim.opt_local.spell = false
+  end,
+})
 --       - Need to create cases for this, might be too complex a global config file is better.
 -- TODO: Large code snippets in markdown files should be folded by default
--- TODO: Global configuration file for markdown-lint (this isn't pert inent to autocmd's)
