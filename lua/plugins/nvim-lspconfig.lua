@@ -10,6 +10,9 @@ return {
         bashls = {
           filetypes = { "sh", "zsh" },
         },
+        css_variables = {},
+        cssls= {},
+        cssmodules_ls = {},
         html = {
           filetypes = { "html", "templ", "htmldjango" },
         },

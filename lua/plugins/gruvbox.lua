@@ -1,5 +1,4 @@
 return {
-  -- add gruvbox
   "ellisonleao/gruvbox.nvim",
   opts = {
     terminal_colors = true, -- add neovim terminal colors
@@ -32,6 +31,8 @@ return {
       SnacksPickerUnselected = { link = "GruvboxGray" },
       SnacksPickerTotals = { link = "GruvboxGray" },
       SnacksPickerPathIgnored = { link = "GruvboxGray" },
+      SnacksWinKeySep = { link = "GruvBoxGray" },
+      NonText = { link = "GruvBoxGray" }, -- This works better for visibility w/ snacks, at least until GruvBox gets updated
       -- https://github.com/ellisonleao/gruvbox.nvim/pull/372/commits/4be28bb8afc8986f838162109229c0774b3c2260
       -- BlinkCmpGhostText = { link = "GruvboxBg4" },
       -- BlinkCmpSource = { link = "GruvboxGray" },
