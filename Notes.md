@@ -39,3 +39,32 @@ that can make changes to the default values, or return new values to be used ins
 ## Python
 
 [PyLsp LazyVim Configuration](https://www.reddit.com/r/neovim/comments/14316t9/help_me_to_get_the_best_python_neovim_environment/)
+
+### Pyright and BasedPyright Stubs
+
+[Using Microsoft python-type-stubs with Pyright](https://jaewonchung.me/technical/Using-Microsoft-python-type-stubs-with-Pyright/)
+
+Essentially:
+
+1. Add python-type-stubs as a git submodule under the directory stubs:
+
+```bash
+cd proj
+# Assuming you have GitHub SSH authentication set up.
+git submodule add git@github.com:microsoft/python-type-stubs stubs
+```
+
+2. Point to stubs
+  - Using `pyrproject.toml`
+  ```toml
+  [tool.pyright]
+  stubPath = "./stubs/stubs"
+  ```
+  - If not `pyporject.toml`, must have `pyrightconfig.json` in root of workspace
+  ```json
+  {
+    "stubPath": "./stubs/stubs"
+  }
+  ```
+
+3. To update: `git submodule update`
